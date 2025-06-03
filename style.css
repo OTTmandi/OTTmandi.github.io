@@ -1,33 +1,207 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OTT Mandi - Premium Subscriptions</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <header>
-    <h1>OTT Mandi</h1>
-    <p>Your one-stop shop for affordable OTT & software subscriptions</p>
-  </header>
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <section id="products">
-      <h2>Available Subscriptions</h2>
-      <div class="product-list">
-        <!-- Add product cards here -->
-        <div class="product-card">
-          <h3>Netflix Premium</h3>
-          <p>₹199/month</p>
-          <button>Buy Now</button>
-        </div>
-      </div>
-    </section>
-  </main>
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
 
-  <footer>
-    <p>&copy; 2025 OTT Mandi. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header / Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1f1f1f, #343434);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background: #00c853;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #009624;
+}
+
+/* Services Section */
+.services {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.buy-button {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.buy-button:hover {
+  background: #0056b3;
+}
+
+/* Why Choose Us Section */
+.why {
+  background: #f0f0f0;
+  padding: 60px 0;
+}
+
+.why h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.why ul {
+  max-width: 600px;
+  margin: auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+.why ul li {
+  background: #ffffff;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-left: 6px solid #00c853;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 60px 0;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.faq-item {
+  max-width: 700px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-left: 6px solid #007bff;
+  border-radius: 6px;
+}
+
+.faq-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 15px;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background: #25D366;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background: #128C7E;
+}
+
+/* Responsive Text */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+  }
+}
