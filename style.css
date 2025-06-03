@@ -94,6 +94,35 @@ a {
   transition: transform 0.2s ease;
 }
 
+.card2 {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card2 img{
+  width: 200px;
+  margin-bottom: 5px;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+}
+
+.card2 h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.card2 p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 12px;
+}
+
 .card:hover {
   transform: translateY(-5px);
 }
