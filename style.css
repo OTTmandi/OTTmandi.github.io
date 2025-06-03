@@ -27,7 +27,7 @@ a {
 .hero {
   background: linear-gradient(135deg, #1f1f1f, #343434);
   color: white;
-  padding: 80px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -231,6 +231,20 @@ a {
 
 .whatsapp-button:hover {
   background: #128C7E;
+}
+.home-button {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background: #d32576;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.home-button:hover {
+  background: #f02727;
 }
 
 /* Responsive Text */
